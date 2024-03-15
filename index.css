@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Neuton&display=swap');
+
+body {
+    font-family: 'Neuton', serif;
+    height: 100vh;
+    width: 100vw;
+    max-width: 100%;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+body div:first-child {
+    margin-top: 1em;
+}
+
+body div:last-child {
+    margin-bottom: 1em;
+}
+
+.left-section {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 1;
+    align-items: center;
+}
+
+.right-section {
+    display: flex;
+    padding: 2em;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ---------- Intro ---------- */
+.intro-content {
+    display: block;
+    text-align: center;
+}
+
+/* ---------- Buttons ---------- */
+.button-container{
+    display: flex;
+    flex-direction: row;
+    gap: 0.1em;
+    justify-content: center;
+}
+button {
+    background-color: transparent;
+    border: none;
+    margin: 0.5em 2em;
+    display: block;
+    font-size: 14px;
+    outline: none;
+    position: relative;
+    transition: 0.3s;
+    padding: 10px;
+}
+button:before {
+    content: '';
+    border-bottom: 1px solid gray;
+    padding: 0 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 0;
+    transition: 0.3s;
+}
+button:hover:before {
+    width: 100%;
+    padding: 0;
+}
+button:active {
+    transform: translateY(2px);
+    -webkit-transform: translateY(2px);
+    -ms-transform: translateY(2px);
+    -moz-transform: translateY(2px);
+    -o-transform: translateY(2px);
+}
+
+/* ---------- Images ---------- */
+.intro-image img{
+    max-width: 100vw;
+}
+.bio-image {
+    display: flex;
+    margin-bottom: 2em;
+}
+.bio-image img{
+    max-width: 40vw;
+}
+.expertise-image {
+    margin-bottom: 20px;
+    border-radius: 0;
+    overflow: hidden;
+    max-height: 45vh;
+    max-width: 50vw;
+}
+.expertise-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* ---------- Text ---------- */
+span {
+    display: block;
+    font-size: 2em;
+    align-self: start;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+p {
+    display: block;
+    margin: 0;
+    line-height: 1.5em;
+    font-size: 1.2em;
+}
+#contact p {
+    max-width: 60%;
+    text-align: center;
+}
+.contact-item {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 2em;
+}
